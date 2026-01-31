@@ -16,7 +16,7 @@ CREATE TABLE Employee (
     Salary DECIMAL(10,2) CHECK (Salary > 0)
 );
 
-//b)	 Entity Integrity Constraint 
+//b)	 Entity Integrity Constraint
 
 ALTER TABLE Department
 ADD CONSTRAINT PK_Department PRIMARY KEY (Department_ID);

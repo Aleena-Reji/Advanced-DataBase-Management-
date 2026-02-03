@@ -25,5 +25,41 @@ WHERE Age = (SELECT MIN(Age) FROM Sailors);
 FROM Sailors
 GROUP BY Rating;
 
+//c)	Count the number of different sailor names.
+  SELECT COUNT(DISTINCT Sname) AS Total_Names
+FROM Sailors;
 
-//
+//d)	Find the average, minimum and maximum rating.
+  SELECT 
+    AVG(Rating) AS Avg_Rating,
+    MIN(Rating) AS Min_Rating,
+    MAX(Rating) AS Max_Rating
+FROM Sailors;
+
+//e)	Find name starts with 'P’ and ends with 'i’.
+  SELECT Sname
+FROM Sailors
+WHERE Sname LIKE 'P%i';
+
+//f)	Find substring 'ya' in name.
+  SELECT Sname
+FROM Sailors
+WHERE Sname LIKE '%ya%';
+
+//g)	Find Age contains 2.
+SELECT Sname, Age
+FROM Sailors
+WHERE Age LIKE '%2%';
+
+//h)	Find names that start with "Na", end with "na", and have exactly two characters in between.
+  SELECT Sname
+FROM Sailors
+WHERE Sname LIKE 'Na__na';
+
+//i)	Find name where name is not like 'Priya'.
+  SELECT Sname
+FROM Sailors
+WHERE Sname NOT LIKE 'Priya';
+
+  
+  

@@ -12,7 +12,7 @@ CREATE TABLE Employee (
 
 //a)	Insert values into table
 
-INSERT INTO Employee 
+INSERT INTO Employee
 (Emp_ID, Emp_Name, DOB, Dept, Designation, Salary)
 VALUES
 (101, 'Rahul', '1998-05-15', 'IT', 'Software Engineer', 45000);
